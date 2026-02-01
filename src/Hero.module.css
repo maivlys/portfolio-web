@@ -1,0 +1,132 @@
+.container{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-top: 60px;
+}
+.hero{
+  width: 1200px;
+  height: 700px;
+  z-index: 1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.h1{
+  position: relative;
+  z-index: 1;
+  margin-top: 28px;
+  font-size: 260px;
+  font-weight: bold;
+  opacity: 0.8;
+  text-align: center;
+}
+.middle{
+  display: flex;
+  width: 90%;
+}
+.middleLeft{
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  max-width: 500px;
+}
+.txt{
+  font-family: var(--font-main);
+  font-size: 16px;
+  font-weight: 250;
+  position: relative;
+  z-index: 1;
+  text-align: right;
+}
+.txt span{
+  font-weight: 400;
+}
+.btn {
+  position: relative;
+  font-size: 16px;
+  padding: 0.7em 1em;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+  border-radius: 6em;
+  transition: all 0.2s;
+  border: none;
+  font-family: var(--font-main);
+  font-weight: 250;
+  color: var(--light-text-clr);
+  background-color: var(--contrast-clr);
+}
+.btn:hover {
+  transform: translateX(4px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.btn:active {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.btn::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s;
+}
+.btn::after {
+  background-color: hsla(0, 0%, 100%, 0.8);
+}
+.btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+.btn .svg{
+  stroke: var(--light-text-clr)
+}
+.email{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  align-self: flex-start;
+}
+.email p{
+  font-weight: 250;
+}
+.email svg{
+  stroke: var(--text-clr)
+}
+.gradient{
+  position: absolute;
+  width: 1100px;
+  height: 800px;
+  z-index: 0;
+  inset: 0;
+  top: -60px;
+  left: 260px;
+  opacity: 0.9;
+}
+.gradient .img{
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.photo{
+  position: absolute;
+  width: 480px;
+  aspect-ratio: 1/1;
+  z-index: 10;
+  top: 115px;
+  left: 580px;
+}
+.photo .img{
+  z-index: 10;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}

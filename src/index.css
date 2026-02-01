@@ -1,0 +1,29 @@
+:root {
+  --bkg-clr: #120400;
+  --contrast-clr: #f2e9b1;
+  --gradient-clr: #315393;
+  --text-clr: #EBE7E6;
+  --light-bkg-clr: #EBE7E6;
+  --light-contrast-clr: #B7B1F2;
+  --light-gradient-clr: #F2E9B1;
+  --light-text-clr: #120400;
+
+  --font-main: "Alexandria", sans-serif;
+  --font-secondary:  "Allura", cursive;
+
+  --section-margin: 2rem;
+
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: var(--bkg-clr);
+  font-family: var(--font-main);
+  color: var(--text-clr);
+  margin-bottom: 150px;
+}

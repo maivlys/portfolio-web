@@ -1,0 +1,39 @@
+.container{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  z-index: 100;
+}
+.nav{
+  margin-top: 24px;
+  display: flex;
+  justify-content: space-between;
+  padding: 4px ;
+  width: 1200px;
+  border-bottom: 1px solid var(--text-clr);
+}
+.sections{
+  display: flex;
+  gap: 10rem;
+}
+.button{
+  font-family: var(--font-main);
+  font-weight: regular;
+  font-size: 20px;
+  color: var(--text-clr);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+.button:hover{
+  color: var(--contrast-clr);
+}
+.svg{
+  stroke: var(--text-clr);
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+.svg:hover{
+  stroke: var(--contrast-clr);
+}

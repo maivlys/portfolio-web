@@ -1,0 +1,23 @@
+.container{
+  display: flex;
+  justify-content: center;
+}
+.section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  width: 1200px;
+}
+.section h2{
+  font-weight: bold;
+  font-size: 40px;
+}
+.projects{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}

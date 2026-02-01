@@ -1,0 +1,19 @@
+.intro{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+.intro h2{
+  font-weight: bold;
+  font-size: 40px;
+}
+.content{
+  width: 700px;
+  display: flex;
+  justify-content: space-between;
+}
+.content p{
+  font-weight: 250;
+}
