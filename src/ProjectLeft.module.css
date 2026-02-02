@@ -47,8 +47,12 @@
   font-weight: 250;
   color: var(--light-text-clr);
   background-color: var(--contrast-clr);
+  transition: all 0.2s ease;
 }
-.btn:hover {
+.btn:hover{
+  background-color: white;
+}
+/* .btn:hover {
   transform: translateX(2px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
@@ -72,7 +76,7 @@
 .btn:hover::after {
   transform: scaleX(1.2) scaleY(1.35);
   opacity: 0;
-}
+} */
 .btn .svg{
   stroke: var(--light-text-clr)
 }
@@ -92,4 +96,8 @@
   width: 100%;
   aspect-ratio: 1/1;
   object-fit: cover;
+  transition: scale 1s ease;
+}
+.img:hover{
+  scale: 1.2;
 }

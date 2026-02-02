@@ -5,7 +5,9 @@ export function ProjectLeft({ project }) {
     <div className={styles.container}>
       <div className={styles.left}>
         <div className={styles.border}>
-          <img className={styles.img} src={project?.imgSrc} alt="" />
+          <a href={project?.demoURL} target="_blank">
+            <img className={styles.img} src={project?.imgSrc} alt="" />
+          </a>
         </div>
       </div>
       <div className={styles.right}>
@@ -14,7 +16,7 @@ export function ProjectLeft({ project }) {
         <p className={styles.desc}>{project?.description}</p>
         <div className={styles.links}>
           <button className={styles.btn}>
-            <a href={project?.githubURL} target="_blank">
+            <a href={project?.githubURL}>
               github
               <svg
                 className={styles.svg}
@@ -33,7 +35,7 @@ export function ProjectLeft({ project }) {
             </a>
           </button>
           <button className={styles.btn}>
-            <a href={project?.demoURL} target="blank">
+            <a href={project?.demoURL} target="_blank">
               live demo
               <svg
                 className={styles.svg}
