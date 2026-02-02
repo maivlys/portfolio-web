@@ -28,7 +28,7 @@ export function Navbar() {
           </svg>
         </div>
         <div className={styles.sections}>
-          <button className={styles.button}>about me</button>
+          <button className={styles.button}>about</button>
           <button className={styles.button}>my work</button>
           <button className={styles.button}>contact</button>
         </div>
