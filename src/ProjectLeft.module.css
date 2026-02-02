@@ -5,10 +5,11 @@
 }
 .right{
   height: 300px;
-  width: 35%;
+  width: 32%;
   display: grid;
   grid-template-rows: 20px 95px auto;
   justify-items: end;
+  margin-right: 60px;
 }
 .right .p{
   font-weight: 400;

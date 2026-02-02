@@ -5,13 +5,13 @@
 }
 .left{
   height: 300px;
-  width: 35%;
+  width: 32%;
   display: grid;
   grid-template-rows: 20px 95px auto;
+  margin-left: 60px;
 }
 .left .p{
   font-weight: 400;
-
 }
 .left h4{
   font-family: var(--font-secondary);
