@@ -16,7 +16,7 @@ export function ProjectLeft({ project }) {
         <p className={styles.desc}>{project?.description}</p>
         <div className={styles.links}>
           <button className={styles.btn}>
-            <a href={project?.githubURL}>
+            <a href={project?.githubURL} target="_blank">
               github
               <svg
                 className={styles.svg}
