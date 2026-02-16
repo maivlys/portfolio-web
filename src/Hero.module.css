@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   position: relative;
-  margin-top: 60px;
+  margin: 60px 0;
 }
 .hero{
   width: 1200px;
@@ -57,15 +57,15 @@
   border: none;
   font-family: var(--font-main);
   font-weight: 250;
-  color: var(--light-text-clr);
+  color: var(--bkg-clr);
   background-color: var(--contrast-clr);
 }
 .btn:hover {
   transform: translateX(4px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 12px 18px rgb(from var(--text-clr) r g b / 0.2);
 }
 .btn:active {
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 14px rgb(from var(--text-clr) r g b / 0.2);
 }
 .btn::after {
   content: "";
@@ -82,11 +82,12 @@
   background-color: hsla(0, 0%, 100%, 0.8);
 }
 .btn:hover::after {
-  transform: scaleX(1.4) scaleY(1.6);
+  transform: scaleX(1.6) scaleY(1.6);
+
   opacity: 0;
 }
 .btn .svg{
-  stroke: var(--light-text-clr)
+  stroke: var(--bkg-clr)
 }
 .email{
   display: flex;
@@ -98,7 +99,7 @@
   font-weight: 250;
 }
 .email svg{
-  stroke: var(--text-clr)
+  stroke: var(--bkg-clr)
 }
 .gradient{
   position: absolute;

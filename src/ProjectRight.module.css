@@ -43,7 +43,7 @@
   border: none;
   font-family: var(--font-main);
   font-weight: 250;
-  color: var(--light-text-clr);
+  color: var(--bkg-clr);
   background-color: var(--contrast-clr);
   transition: all 0.2s ease;
 }
@@ -76,11 +76,11 @@
   opacity: 0;
 } */
 .btn .svg{
-  stroke: var(--light-text-clr)
+  stroke: var(--bkg-clr)
 }
 .btn a{
   text-decoration: none;
-  color: var(--light-text-clr);
+  color: var(--bkg-clr);
 }
 .border{
   width: 300px;
