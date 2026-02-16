@@ -1,6 +1,6 @@
 import styles from "./Footer.module.css";
 
-export function Footer(params) {
+export function Footer() {
   return (
     <div className={styles.container}>
       <footer className={styles.footer}>
@@ -11,7 +11,7 @@ export function Footer(params) {
         </div>
         <div className={styles.right}>
           <img
-            className={styles.img}
+            className={styles.signature}
             src="../public/signature/dark-mode/signature.svg"
             alt=""
           />
