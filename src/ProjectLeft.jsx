@@ -1,16 +1,17 @@
 import styles from "./ProjectLeft.module.css";
+import animationStyle from "./index.module.css";
 
 export function ProjectLeft({ project }) {
   return (
-    <div className={styles.container}>
-      <div className={styles.left}>
+    <div className={`${styles.container}`}>
+      <div className={`${styles.left} ${animationStyle.block}`}>
         <div className={styles.border}>
           <a href={project?.demoURL} target="_blank">
             <img className={styles.img} src={project?.imgSrc} alt="" />
           </a>
         </div>
       </div>
-      <div className={styles.right}>
+      <div className={`${styles.right} ${animationStyle.block}`}>
         <p className={styles.p}>project {project?.number}</p>
         <h4>{project?.title}</h4>
         <p className={styles.desc}>{project?.description}</p>

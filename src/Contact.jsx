@@ -1,12 +1,15 @@
 import { useState } from "react";
 import styles from "./Contact.module.css";
+import animationStyle from "./index.module.css";
 
 export function Contact() {
   const [isCopied, setIsCopied] = useState(false);
   return (
     <div className={styles.container}>
-      <h2 className={styles.h2}>contact</h2>
-      <div className={`${styles.linkedin} ${styles.container}`}>
+      <h2 className={`${styles.h2} ${animationStyle.block}`}>contact</h2>
+      <div
+        className={`${styles.linkedin} ${styles.container} ${animationStyle.block}`}
+      >
         <p>connect with me on LinkedIn</p>
         <button className={styles.liBtn}>
           <a href="https://www.linkedin.com/in/sylviamakarova" target="_blank">
@@ -20,7 +23,9 @@ export function Contact() {
           </a>
         </button>
       </div>
-      <div className={`${styles.email} ${styles.container}`}>
+      <div
+        className={`${styles.email} ${styles.container} ${animationStyle.block}`}
+      >
         <p>
           or send me an email
           {/* ♡ */}

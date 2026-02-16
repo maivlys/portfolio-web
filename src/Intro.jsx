@@ -1,11 +1,12 @@
 import styles from "./Intro.module.css";
+import animationStyle from "./index.module.css";
 
 export function Intro(params) {
   return (
     <div className={styles.intro}>
-      <h2 className={styles.h2}>about</h2>
-      <div className={styles.content}>
-        <div className={styles.left}>
+      <h2 className={`${styles.h2} ${animationStyle.block}`}>about</h2>
+      <div className={`${styles.content}`}>
+        <div className={`${styles.left} ${animationStyle.block}`}>
           <p className={styles.p}>who am i</p>
           <p className={styles.desc}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -18,7 +19,7 @@ export function Intro(params) {
           </p>
         </div>
 
-        <div className={styles.rigth}>
+        <div className={`${styles.right} ${animationStyle.block}`}>
           <p className={styles.p}>my skills</p>
           <div className={styles.skills}>
             <div className={styles.iconCnt}>

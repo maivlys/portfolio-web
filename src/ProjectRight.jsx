@@ -1,9 +1,10 @@
 import styles from "./ProjectRight.module.css";
+import animationStyle from "./index.module.css";
 
 export function ProjectRight({ project }) {
   return (
     <div className={styles.container}>
-      <div className={styles.left}>
+      <div className={`${styles.left} ${animationStyle.block}`}>
         <p className={styles.p}>project {project?.number}</p>
         <h4>{project?.title}</h4>
         <p className={styles.desc}>{project?.description}</p>
@@ -48,7 +49,7 @@ export function ProjectRight({ project }) {
           </button>
         </div>
       </div>
-      <div className={styles.right}>
+      <div className={`${styles.right} ${animationStyle.block}`}>
         <div className={styles.border}>
           <a href={project?.demoURL} target="_blank">
             <img className={styles.img} src={project?.imgSrc} alt="" />
