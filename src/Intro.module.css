@@ -46,6 +46,7 @@
 .skills .img{
   width: 50px;
   opacity: 0.8;
+  transition: all 0.2s ease;
 }
 .skills .img:hover{
   opacity: 1;
