@@ -7,7 +7,7 @@ export function Projects() {
   return (
     <div className={styles.container}>
       <div className={styles.section}>
-        <h2>my work</h2>
+        <h2>projects</h2>
         <div className={styles.projects}>
           {data.map((project, i) => {
             if (i % 2 === 0) {
