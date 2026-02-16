@@ -6,7 +6,7 @@ export function Footer() {
       <footer className={styles.footer}>
         <div className={styles.left}>
           <button className={styles.btn}>about</button>
-          <button className={styles.btn}>my work</button>
+          <button className={styles.btn}>projects</button>
           <button className={styles.btn}>contact</button>
         </div>
         <div className={styles.right}>

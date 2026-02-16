@@ -29,7 +29,7 @@ export function Navbar() {
         </div>
         <div className={styles.sections}>
           <button className={styles.button}>about</button>
-          <button className={styles.button}>my work</button>
+          <button className={styles.button}>projects</button>
           <button className={styles.button}>contact</button>
         </div>
       </nav>
