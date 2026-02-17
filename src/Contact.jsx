@@ -4,6 +4,7 @@ import animationStyle from "./index.module.css";
 
 export function Contact() {
   const [isCopied, setIsCopied] = useState(false);
+
   return (
     <div className={styles.container}>
       <h2 className={`${styles.h2} ${animationStyle.block}`}>contact</h2>
@@ -35,6 +36,9 @@ export function Contact() {
           onClick={() => {
             navigator.clipboard.writeText("makarovasylvia@gmail.com");
             setIsCopied(true);
+            setTimeout(() => {
+              setIsCopied(false);
+            }, 5000);
           }}
         >
           <span>makarovasylvia@gmail.com</span>
