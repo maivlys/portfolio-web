@@ -57,8 +57,8 @@
   border: none;
   font-family: var(--font-main);
   font-weight: 250;
-  color: var(--bkg-clr);
-  background-color: var(--contrast-clr);
+  color: var(--btn-text-clr);
+  background-color: var(--primary-clr);
 }
 .btn:hover {
   transform: translateX(4px);
@@ -87,7 +87,7 @@
   opacity: 0;
 }
 .btn .svg{
-  stroke: var(--bkg-clr)
+  stroke: var(--btn-text-clr)
 }
 .email{
   display: flex;
@@ -99,9 +99,10 @@
   font-weight: 250;
 }
 .email svg{
-  stroke: var(--bkg-clr)
+  stroke: var(--text-clr);
+  transition: all 0.4s ease-in-out;
 }
-.gradient{
+/* .gradient{
   position: absolute;
   width: 1100px;
   height: 800px;
@@ -116,7 +117,7 @@
   height: 100%;
   width: 100%;
   object-fit: cover;
-}
+} */
 .photo{
   position: absolute;
   width: 480px;
@@ -130,4 +131,38 @@
   height: 100%;
   width: 100%;
   object-fit: cover;
+}
+.circle {
+
+  position: absolute;
+  width: 1100px;
+  height: 800px;
+  z-index: 0;
+  inset: 0;
+  top: -60px;
+  left: 260px;
+  /* opacity: 0; */
+
+  border-radius: 50%;
+  transition: all 0.4s ease-in-out;
+  /* background: radial-gradient(
+    ellipse at 44% 50%,
+    var(--gradient-in) 0%,
+    var(--gradient-out) 56%
+  ); */
+
+}
+.light{
+  background: radial-gradient(
+    ellipse at 44% 50%,
+    #f2e9b1 0%,
+    #ebe7e6 56%
+  );
+}
+.dark{
+  background: radial-gradient(
+    ellipse at 44% 50%,
+    #315393 0%,
+    #120400 56%
+  );
 }

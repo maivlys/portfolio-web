@@ -1,6 +1,9 @@
 import styles from "./Hero.module.css";
+import { GlobalContext } from "./context/GlobalContext";
+import { useContext } from "react";
 
 export function Hero() {
+  const { theme, setTheme } = useContext(GlobalContext);
   return (
     <div className={styles.container}>
       <div className={styles.hero}>
@@ -32,11 +35,24 @@ export function Hero() {
             </span>
           </div>
           <div className={styles.middleRight}>
-            <div className={styles.gradient}>
-              <img className={styles.img} src="./public/gradient.png" alt="" />
-            </div>
+            <div
+              className={`${styles.circle} ${styles[theme === "dark" ? "dark" : "light"]}`}
+            />
+            {/* <div className={`${styles.circle} ${styles.dark}`} />
+            <div className={`${styles.circle} ${styles.light}`} /> */}
+            {/* <div className={styles.gradient}>
+              <img
+                className={styles.img}
+                src={`./public/hero/${theme === "dark" ? "dark" : "light"}-mode/gradient.png`}
+                alt=""
+              />
+            </div> */}
             <div className={styles.photo}>
-              <img className={styles.img} src="./public/photo.png" alt="" />
+              <img
+                className={styles.img}
+                src={`./public/hero/${theme === "dark" ? "dark" : "light"}-mode/photo.png`}
+                alt=""
+              />
             </div>
           </div>
         </div>
