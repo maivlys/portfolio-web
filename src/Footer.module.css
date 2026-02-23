@@ -1,6 +1,4 @@
 .container{
-  /* height: 300px; */
-  /* border: 1px solid aquamarine; */
   position: relative;
   display: flex;
   justify-content: center;
@@ -37,7 +35,7 @@
   transition: color 0.3s ease;
 }
 .btn:hover{
-  color: var(--contrast-clr);
+  color: var(--primary-clr);
 }
 .right{
   position: relative;

@@ -1,6 +1,9 @@
 import styles from "./Footer.module.css";
+import { GlobalContext } from "./context/GlobalContext";
+import { useContext } from "react";
 
 export function Footer() {
+  const { theme, setTheme } = useContext(GlobalContext);
   return (
     <div className={styles.container}>
       <footer className={styles.footer}>
@@ -12,8 +15,8 @@ export function Footer() {
         <div className={styles.right}>
           <img
             className={styles.signature}
-            src="../public/signature/dark-mode/signature.svg"
-            alt=""
+            src={`../public/signature/${theme === "dark" ? "dark" : "light"}-mode/signature.svg`}
+            alt="signature-image"
           />
           <p className={styles.year}>2026</p>
         </div>

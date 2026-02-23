@@ -43,54 +43,34 @@
   border: none;
   font-family: var(--font-main);
   font-weight: 250;
-  color: var(--bkg-clr);
-  background-color: var(--contrast-clr);
+  color: var(--btn-text-clr);
+  background-color: var(--primary-clr);
   transition: all 0.2s ease;
 }
 .btn:hover{
-  background-color: white;
+  background-color: var(--project-link-btn-bkg-clr-hover);
 }
-/* .btn:hover {
-  transform: translateX(2px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
-.btn:active {
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-}
-.btn::after {
-  content: "";
-  height: 100%;
-  width: 100%;
-  border-radius: 100px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  transition: all 0.4s;
-}
-.btn::after {
-  background-color: hsla(0, 0%, 100%, 0.8);
-}
-.btn:hover::after {
-  transform: scaleX(1.2) scaleY(1.35);
-  opacity: 0;
-} */
 .btn .svg{
-  stroke: var(--bkg-clr)
+  stroke: var(--btn-text-clr)
 }
 .btn a{
   text-decoration: none;
-  color: var(--bkg-clr);
+  color: var(--btn-text-clr);
+}
+.btn:hover .svg{
+  stroke: var(--project-link-btn-text-clr-hover);
+}
+.btn:hover a{
+  color: var(--project-link-btn-text-clr-hover);
 }
 .border{
   width: 300px;
   aspect-ratio: 1/1;
   border-radius: 50%;
-  border: 12px solid rgba(255, 255, 255, 0.6);
+  border: 12px solid var(--project-border);
   overflow: hidden;
 }
 .img{
-  background-color: rgba(255, 255, 255, 0.089);
   width: 100%;
   aspect-ratio: 1/1;
   object-fit: cover;

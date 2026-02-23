@@ -1,7 +1,10 @@
 import styles from "./Intro.module.css";
 import animationStyle from "./index.module.css";
+import { GlobalContext } from "./context/GlobalContext";
+import { useContext } from "react";
 
 export function Intro(params) {
+  const { theme, setTheme } = useContext(GlobalContext);
   return (
     <div className={styles.intro}>
       <h2 className={`${styles.h2} ${animationStyle.block}`}>about</h2>
@@ -25,7 +28,7 @@ export function Intro(params) {
             <div className={styles.iconCnt}>
               <img
                 className={styles.img}
-                src="../public/skills-icons/dark-mode/html5.svg"
+                src={`../public/skills-icons/${theme === "dark" ? "dark" : "light"}-mode/html5.svg`}
                 alt=""
               />
               <p className={styles.skillTitle}>HTML5</p>
@@ -33,7 +36,7 @@ export function Intro(params) {
             <div className={styles.iconCnt}>
               <img
                 className={styles.img}
-                src="../public/skills-icons/dark-mode/css.svg"
+                src={`../public/skills-icons/${theme === "dark" ? "dark" : "light"}-mode/css.svg`}
                 alt=""
               />
               <p className={styles.skillTitle}>CSS3</p>
@@ -41,7 +44,7 @@ export function Intro(params) {
             <div className={styles.iconCnt}>
               <img
                 className={styles.img}
-                src="../public/skills-icons/dark-mode/javascript.svg"
+                src={`../public/skills-icons/${theme === "dark" ? "dark" : "light"}-mode/javascript.svg`}
                 alt=""
               />
               <p className={styles.skillTitle}>JavaScript</p>
@@ -49,7 +52,7 @@ export function Intro(params) {
             <div className={styles.iconCnt}>
               <img
                 className={styles.img}
-                src="../public/skills-icons/dark-mode/react.svg"
+                src={`../public/skills-icons/${theme === "dark" ? "dark" : "light"}-mode/react.svg`}
                 alt=""
               />
               <p className={styles.skillTitle}>React</p>
@@ -57,7 +60,7 @@ export function Intro(params) {
             <div className={styles.iconCnt}>
               <img
                 className={styles.img}
-                src="../public/skills-icons/dark-mode/typescript.svg"
+                src={`../public/skills-icons/${theme === "dark" ? "dark" : "light"}-mode/typescript.svg`}
                 alt=""
               />
               <p className={styles.skillTitle}>TypeScript</p>
@@ -65,7 +68,7 @@ export function Intro(params) {
             <div className={styles.iconCnt}>
               <img
                 className={styles.img}
-                src="../public/skills-icons/dark-mode/tailwindcss.svg"
+                src={`../public/skills-icons/${theme === "dark" ? "dark" : "light"}-mode/tailwindcss.svg`}
                 alt=""
               />
               <p className={styles.skillTitle}>Tailwind CSS</p>
@@ -73,7 +76,7 @@ export function Intro(params) {
             <div className={styles.iconCnt}>
               <img
                 className={styles.img}
-                src="../public/skills-icons/dark-mode/github.svg"
+                src={`../public/skills-icons/${theme === "dark" ? "dark" : "light"}-mode/github.svg`}
                 alt=""
               />
               <p className={styles.skillTitle}>GitHub</p>
@@ -81,7 +84,7 @@ export function Intro(params) {
             <div className={styles.iconCnt}>
               <img
                 className={styles.img}
-                src="../public/skills-icons/dark-mode/git.svg"
+                src={`../public/skills-icons/${theme === "dark" ? "dark" : "light"}-mode/git.svg`}
                 alt=""
               />
               <p className={styles.skillTitle}>Git</p>
@@ -89,7 +92,7 @@ export function Intro(params) {
             <div className={styles.iconCnt}>
               <img
                 className={styles.img}
-                src="../public/skills-icons/dark-mode/apis.svg"
+                src={`../public/skills-icons/${theme === "dark" ? "dark" : "light"}-mode/apis.svg`}
                 alt=""
               />
               <p className={styles.skillTitle}>REST API</p>
@@ -97,23 +100,15 @@ export function Intro(params) {
             <div className={styles.iconCnt}>
               <img
                 className={styles.img}
-                src="../public/skills-icons/dark-mode/vscode.svg"
+                src={`../public/skills-icons/${theme === "dark" ? "dark" : "light"}-mode/vscode.svg`}
                 alt=""
               />
               <p className={styles.skillTitle}>VS Code</p>
             </div>
-            {/* <div className={styles.iconCnt}>
-              <img
-                className={styles.img}
-                src="../public/skills-icons/dark-mode/terminal.svg"
-                alt=""
-              />
-              <p className={styles.skillTitle}>Command Line</p>
-            </div> */}
             <div className={styles.iconCnt}>
               <img
                 className={styles.img}
-                src="../public/skills-icons/dark-mode/responsivness.svg"
+                src={`../public/skills-icons/${theme === "dark" ? "dark" : "light"}-mode/responsivness.svg`}
                 alt=""
               />
               <p className={styles.skillTitle}>Responsive Desing</p>
@@ -121,7 +116,7 @@ export function Intro(params) {
             <div className={styles.iconCnt}>
               <img
                 className={styles.img}
-                src="../public/skills-icons/dark-mode/figma.svg"
+                src={`../public/skills-icons/${theme === "dark" ? "dark" : "light"}-mode/figma.svg`}
                 alt=""
               />
               <p className={styles.skillTitle}>Figma</p>

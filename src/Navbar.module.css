@@ -28,7 +28,7 @@
   transition: color 0.3s ease;
 }
 .button:hover{
-  color: var(--contrast-clr);
+  color: var(--primary-clr);
 }
 .svg{
   stroke: var(--text-clr);
@@ -36,5 +36,5 @@
   transition: color 0.3s ease;
 }
 .svg:hover{
-  stroke: var(--contrast-clr);
+  stroke: var(--primary-clr);
 }

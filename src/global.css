@@ -1,0 +1,51 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --font-main: "Alexandria", sans-serif;
+  --font-secondary:  "Allura", cursive;
+}
+:root{
+  /* dark mode */
+  --bkg-clr: #120400;
+  --text-clr: #ebe7e6;
+  --primary-clr: #f2e9b1;
+  --btn-text-clr: #120400;
+  --gradient-in: #315393;
+  --gradient-out: #120400;
+  --project-link-btn-bkg-clr-hover: #ebe7e6;
+  --project-link-btn-text-clr-hover: #120400;
+  --project-border:rgba(235, 231, 230, 0.7);
+  --linkedin-svg-clr: #ebe7e6;
+  --linkedin-svg-hover-effect: rgba(255, 255, 255, 0);
+  --flash-clr: white;
+
+}
+
+:root[data-theme="light"]{
+  /* light mode */
+  --bkg-clr: #ebe7e6;
+  --text-clr: #120400;
+  --primary-clr: #DC7A87;
+  --btn-text-clr: #120400;
+  --gradient-in: #f2e9b1;
+  --gradient-out: #ebe7e6;
+  /* --project-link-btn-bkg-clr-hover: rgba(18, 4, 0, 0.8); */
+  --project-link-btn-bkg-clr-hover: rgba(255, 255, 255, 0.8);
+  --project-link-btn-text-clr-hover: #120400;
+  --project-border: rgba(18, 4, 0, 0.3);
+  --linkedin-svg-clr: #120400;
+  --linkedin-svg-hover-effect: rgba(255, 255, 255, 0.8);
+  --flash-clr: rgba(0, 0, 0, 0.6);
+}
+
+:root[data-theme="dark"] .dark {
+  opacity: 0.9;
+}
+
+:root[data-theme="light"] .light {
+  opacity: 0.9;
+}
