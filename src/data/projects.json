@@ -5,26 +5,26 @@
     "description": "This project is demonstrating React + TypeScript skills, with focus on state-driven UI updates and user-friendly interactions.",
     "githubURL": "https://github.com/maivlys/hangman",
     "demoURL": "https://hangman-seven-iota.vercel.app/",
-    "imgSrc": "../public/hangman.png"
+    "imgSrc": "../public/projects/hangman.png"
   },{
     "number": "02",
     "title": "shopping cart",
     "description": "This project is demonstrating React + TypeScript skills, with focus on state-driven UI updates and user-friendly interactions.",
     "githubURL": "https://github.com/maivlys/hangman",
     "demoURL": "https://hangman-seven-iota.vercel.app/",
-    "imgSrc": "../public/hangman.png"
+    "imgSrc": "../public/projects/hangman.png"
   },{
     "number": "03",
     "title": "hangman 22",
     "description": "This project is demonstrating React + TypeScript skills, with focus on state-driven UI updates and user-friendly interactions.",
     "githubURL": "https://github.com/maivlys/hangman",
     "demoURL": "https://hangman-seven-iota.vercel.app/",
-    "imgSrc": "../public/hangman.png"
+    "imgSrc": "../public/projects/hangman.png"
   },{
     "number": "04",
     "title": "web portfolio",
     "description": "This project is demonstrating React + TypeScript skills, with focus on state-driven UI updates and user-friendly interactions.",
     "githubURL": "https://github.com/maivlys/hangman",
     "demoURL": "https://hangman-seven-iota.vercel.app/",
-    "imgSrc": "../public/hangman.png"
+    "imgSrc": "../public/projects/hangman.png"
   }]
