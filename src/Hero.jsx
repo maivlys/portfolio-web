@@ -50,7 +50,7 @@ export function Hero() {
             <div className={styles.photo}>
               <img
                 className={styles.img}
-                src={`./public/hero/${theme === "dark" ? "dark" : "light"}-mode/photo.png`}
+                src={`//hero/${theme === "dark" ? "dark" : "light"}-mode/photo.png`}
                 alt=""
               />
             </div>
