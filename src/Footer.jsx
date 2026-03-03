@@ -15,7 +15,7 @@ export function Footer() {
         <div className={styles.right}>
           <img
             className={styles.signature}
-            src={`../public/signature/${theme === "dark" ? "dark" : "light"}-mode/signature.svg`}
+            src={`/signature/${theme === "dark" ? "dark" : "light"}-mode/signature.svg`}
             alt="signature-image"
           />
           <p className={styles.year}>2026</p>
