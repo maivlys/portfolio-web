@@ -101,7 +101,7 @@
 .email p{
   font-weight: 250;
 }
-.email svg{
+.email .svg{
   stroke: var(--text-clr);
   transition: all 0.4s ease-in-out;
 }
@@ -234,6 +234,12 @@
   }
   .middleLeft{
     top: 370px;
+  }
+  .email{
+    font-size: 0.8rem;
+  }
+  .email .svg{
+    width: 18px;
   }
 }
 

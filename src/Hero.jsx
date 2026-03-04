@@ -62,8 +62,7 @@ export function Hero() {
         </div>
         <span className={styles.email}>
           <svg
-            width={20}
-            height={20}
+            className={styles.svg}
             fill="none"
             strokeLinecap="round"
             strokeLinejoin="round"
