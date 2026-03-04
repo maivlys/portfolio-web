@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <script>
+      (function () {
+        const stored = localStorage.getItem("theme");
+        const theme = stored ? JSON.parse(stored) : "dark";
+        document.documentElement.setAttribute("data-theme", theme);
+
+        // Favicon switching: follow system `prefers-color-scheme` only.
+        const lightHref = "/favicon-light.svg";
+        const darkHref = "/favicon-dark.svg";
+
+        function setFaviconForSystem(isDark) {
+          const linkId = "dynamic-favicon";
+          let link = document.getElementById(linkId);
+          if (!link) {
+            link = document.createElement("link");
+            link.id = linkId;
+            link.rel = "icon";
+            link.type = "image/svg+xml";
+            document.head.appendChild(link);
+          }
+          link.href = isDark ? lightHref : darkHref;
+        }
+
+        if (window.matchMedia) {
+          const mq = window.matchMedia("(prefers-color-scheme: dark)");
+          // initial
+          setFaviconForSystem(mq.matches);
+          // respond to system changes
+          mq.addEventListener
+            ? mq.addEventListener("change", (e) =>
+                setFaviconForSystem(e.matches),
+              )
+            : mq.addListener((e) => setFaviconForSystem(e.matches));
+        } else {
+          // fallback
+          setFaviconForSystem(false);
+        }
+      })();
+    </script>
+    <meta
+      charset="UTF-8"
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Allura&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+    <title>portfolio</title>
+    <script type="module" crossorigin src="/assets/index-CV-FeccN.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-RXGraw-2.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
