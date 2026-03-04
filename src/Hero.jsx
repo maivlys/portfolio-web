@@ -7,7 +7,11 @@ export function Hero() {
   return (
     <div className={styles.container}>
       <div className={styles.hero}>
-        <h1 className={styles.h1}>portfolio</h1>
+        <h1 className={styles.h1}>
+          <span className={styles.mobile}>port</span>
+          <span className={styles.mobile}>fo</span>
+          <span className={styles.mobile}>lio</span>
+        </h1>
         <div className={styles.middle}>
           <div className={styles.middleLeft}>
             <p className={styles.txt}>

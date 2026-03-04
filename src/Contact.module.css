@@ -172,3 +172,22 @@
     opacity: 0;
   }
 }
+
+@media (max-width: 1024px) {
+  .btn{
+    font-size: 14px;
+  }
+}
+@media (max-width: 897px) {
+  .svg{
+    width: 18px;
+  }
+}
+@media (max-width: 500px) {
+  .btn{
+    font-size: 12px;
+  }
+  .svg{
+    width: 14px;
+  }
+}

@@ -17,7 +17,7 @@
   display: flex;
   justify-content: space-between;
   padding: 4px ;
-  width: 1200px;
+  width: clamp(300px, 80%, 1200px);
   border-top: 1px solid var(--text-clr);
 }
 .left{
@@ -44,4 +44,32 @@
   position: absolute;
   top: -100px;
   right: -10px;
+}
+
+@media (max-width: 897px) {
+  .left{
+    justify-content: end;
+    gap: 2rem;
+  }
+  .signature{
+    width: 180px;
+    top: -76px;
+    right: -20px;
+  }
+  .btn{
+    font-size: 16px;
+  }
+}
+@media (max-width: 480px) {
+  .left{
+    gap: 1rem;
+  }
+  .signature{
+    width: 140px;
+    top: -60px;
+    right: -14px;
+  }
+  .btn{
+    font-size: 14px;
+  }
 }

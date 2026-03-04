@@ -8,10 +8,9 @@
 .intro .h2{
   font-weight: bold;
   font-size: 40px;
-
 }
 .content{
-  width: 1100px;
+  width: clamp(300px, 80%, 1200px);
   display: flex;
   justify-content: space-between;
   gap: 3rem;
@@ -54,4 +53,22 @@
 .skillTitle{
   font-size: 0.9rem;
   font-weight: 250;
+}
+
+@media (max-width: 690px) {
+  .content{
+    flex-direction: column;
+    align-items: center;
+  }
+  .desc{
+    text-align: center;
+  }
+}
+@media (max-width: 480px) {
+  .skills .img{
+    width: 40px;
+  }
+  .desc{
+    font-size: 0.9rem;
+  }
 }

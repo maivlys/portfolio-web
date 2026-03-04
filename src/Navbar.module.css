@@ -10,7 +10,7 @@
   display: flex;
   justify-content: space-between;
   padding: 4px ;
-  width: 1200px;
+  width: clamp(300px, 80%, 1200px);
   border-bottom: 1px solid var(--text-clr);
 }
 .sections{
@@ -37,4 +37,28 @@
 }
 .svg:hover{
   stroke: var(--primary-clr);
+}
+
+@media (max-width: 897px) {
+  .sections{
+    justify-content: end;
+    gap: 2rem;
+  }
+  .button{
+    font-size: 16px;
+  }
+  .svg{
+    width: 20px;
+  }
+}
+@media (max-width: 480px) {
+  .sections{
+    gap: 1rem;
+  }
+  .button{
+    font-size: 14px;
+  }
+  .svg{
+    width: 18px;
+  }
 }
