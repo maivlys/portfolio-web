@@ -103,6 +103,7 @@
 }
 .email .svg{
   stroke: var(--text-clr);
+  width: 22px;
   transition: all 0.4s ease-in-out;
 }
 .photo{
@@ -142,6 +143,14 @@
     #315393 0%,
     #120400 56%
   );
+}
+
+.circle.fadeOut{
+  opacity: 0;
+}
+
+.cirle.fadeIn{
+  opacity: 1;
 }
 
 /* desktop */

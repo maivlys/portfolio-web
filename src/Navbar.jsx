@@ -2,19 +2,18 @@ import styles from "./Navbar.module.css";
 import "./global.css";
 import "./index.module.css";
 import { GlobalContext } from "./context/GlobalContext";
-import { useContext, useEffect } from "react";
+import { useContext } from "react";
 
-export function Navbar() {
+export function Navbar({ toggle }) {
   const { theme, setTheme } = useContext(GlobalContext);
-  useEffect(() => {
-    console.log(theme);
-  }, [theme]);
+
   return (
     <div className={styles.container}>
       <nav className={styles.nav}>
         <div>
           <svg
             onClick={() => {
+              toggle();
               setTheme(theme === "light" ? "dark" : "light");
             }}
             className={styles.svg}

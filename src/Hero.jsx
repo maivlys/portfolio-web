@@ -1,9 +1,10 @@
 import styles from "./Hero.module.css";
 import { GlobalContext } from "./context/GlobalContext";
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 
-export function Hero() {
+export function Hero({ isChanging }) {
   const { theme, setTheme } = useContext(GlobalContext);
+
   return (
     <div className={styles.container}>
       <div className={styles.hero}>
@@ -40,17 +41,10 @@ export function Hero() {
           </div>
           <div className={styles.middleRight}>
             <div
-              className={`${styles.circle} ${styles[theme === "dark" ? "dark" : "light"]}`}
+              className={`${styles.circle} ${styles[theme === "dark" ? "dark" : "light"]} ${
+                isChanging ? styles.fadeOut : styles.fadeIn
+              }`}
             />
-            {/* <div className={`${styles.circle} ${styles.dark}`} />
-            <div className={`${styles.circle} ${styles.light}`} /> */}
-            {/* <div className={styles.gradient}>
-              <img
-                className={styles.img}
-                src={`./public/hero/${theme === "dark" ? "dark" : "light"}-mode/gradient.png`}
-                alt=""
-              />
-            </div> */}
             <div className={styles.photo}>
               <img
                 className={styles.img}

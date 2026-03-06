@@ -6,13 +6,23 @@ import { Projects } from "./Projects";
 import { Intro } from "./Intro";
 import { Footer } from "./Footer";
 import { Contact } from "./Contact";
+import { useState } from "react";
 
 function App() {
+  const [isChanging, setIsChanging] = useState(false);
+
+  function toggle() {
+    setIsChanging(true);
+    setTimeout(() => {
+      setIsChanging(false);
+    }, 400);
+  }
+
   return (
     <>
-      <Navbar />
+      <Navbar toggle={toggle} />
       <main>
-        <Hero />
+        <Hero isChanging={isChanging} />
         <Intro />
         <Projects />
         <Contact />
