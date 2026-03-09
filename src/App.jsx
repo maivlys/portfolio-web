@@ -11,7 +11,7 @@ import { useState } from "react";
 function App() {
   const [isChanging, setIsChanging] = useState(false);
 
-  function toggle() {
+  function affectGradient() {
     setIsChanging(true);
     setTimeout(() => {
       setIsChanging(false);
@@ -20,12 +20,12 @@ function App() {
 
   return (
     <>
-      <Navbar toggle={toggle} />
+      <Navbar affectGradient={affectGradient} />
       <main>
         <Hero isChanging={isChanging} />
         <Intro />
-        <Projects />
-        <Contact />
+        <Projects id="projects" />
+        <Contact id="contact" />
       </main>
       <Footer />
     </>
