@@ -3,7 +3,7 @@ import { GlobalContext } from "./context/GlobalContext";
 import { useContext, useEffect } from "react";
 
 export function Hero({ isChanging }) {
-  const { theme, setTheme } = useContext(GlobalContext);
+  const { theme, setTheme, scrollTo } = useContext(GlobalContext);
 
   return (
     <div className={styles.container}>
@@ -20,7 +20,10 @@ export function Hero({ isChanging }) {
               building clean designs with thoughtful details{" "}
             </p>
             <span>
-              <button className={styles.btn}>
+              <button
+                onClick={() => scrollTo("contact")}
+                className={styles.btn}
+              >
                 contact me{" "}
                 <svg
                   className={styles.svg}

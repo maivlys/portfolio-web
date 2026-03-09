@@ -6,7 +6,7 @@ export function Contact() {
   const [isCopied, setIsCopied] = useState(false);
 
   return (
-    <div className={styles.container}>
+    <div id="contact" className={styles.container}>
       <h2 className={`${styles.h2} ${animationStyle.block}`}>contact</h2>
       <div
         className={`${styles.linkedin} ${styles.container} ${animationStyle.block}`}

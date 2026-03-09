@@ -6,7 +6,7 @@ import { useContext } from "react";
 export function Intro(params) {
   const { theme, setTheme } = useContext(GlobalContext);
   return (
-    <div className={styles.intro}>
+    <div id="intro" className={styles.intro}>
       <h2 className={`${styles.h2} ${animationStyle.block}`}>about</h2>
       <div className={`${styles.content}`}>
         <div className={`${styles.left} ${animationStyle.block}`}>

@@ -4,8 +4,8 @@ import "./index.module.css";
 import { GlobalContext } from "./context/GlobalContext";
 import { useContext } from "react";
 
-export function Navbar({ toggle }) {
-  const { theme, setTheme } = useContext(GlobalContext);
+export function Navbar({ affectGradient }) {
+  const { theme, setTheme, scrollTo } = useContext(GlobalContext);
 
   return (
     <div className={styles.container}>
@@ -13,7 +13,7 @@ export function Navbar({ toggle }) {
         <div>
           <svg
             onClick={() => {
-              toggle();
+              affectGradient();
               setTheme(theme === "light" ? "dark" : "light");
             }}
             className={styles.svg}
@@ -45,9 +45,18 @@ export function Navbar({ toggle }) {
           </svg>
         </div>
         <div className={styles.sections}>
-          <button className={styles.button}>about</button>
-          <button className={styles.button}>projects</button>
-          <button className={styles.button}>contact</button>
+          <button onClick={() => scrollTo("intro")} className={styles.button}>
+            about
+          </button>
+          <button
+            onClick={() => scrollTo("projects")}
+            className={styles.button}
+          >
+            projects
+          </button>
+          <button onClick={() => scrollTo("contact")} className={styles.button}>
+            contact
+          </button>
         </div>
       </nav>
     </div>

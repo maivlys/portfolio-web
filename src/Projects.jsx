@@ -6,7 +6,7 @@ import animationStyle from "./index.module.css";
 
 export function Projects() {
   return (
-    <div className={styles.container}>
+    <div id="projects" className={styles.container}>
       <div className={styles.section}>
         <h2 className={animationStyle.block}>projects</h2>
         <div className={styles.projects}>

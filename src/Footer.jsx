@@ -3,14 +3,21 @@ import { GlobalContext } from "./context/GlobalContext";
 import { useContext } from "react";
 
 export function Footer() {
-  const { theme, setTheme } = useContext(GlobalContext);
+  const { theme, setTheme, scrollTo } = useContext(GlobalContext);
+
   return (
     <div className={styles.container}>
       <footer className={styles.footer}>
         <div className={styles.left}>
-          <button className={styles.btn}>about</button>
-          <button className={styles.btn}>projects</button>
-          <button className={styles.btn}>contact</button>
+          <button onClick={() => scrollTo("intro")} className={styles.btn}>
+            about
+          </button>
+          <button onClick={() => scrollTo("projects")} className={styles.btn}>
+            projects
+          </button>
+          <button onClick={() => scrollTo("contact")} className={styles.btn}>
+            contact
+          </button>
         </div>
         <div className={styles.right}>
           <img
