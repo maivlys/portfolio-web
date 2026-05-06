@@ -7,7 +7,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 3rem;
+  gap: 1.5rem;
   width: clamp(300px, 80%, 1200px);
   /* margin: 60px 0; */
 }

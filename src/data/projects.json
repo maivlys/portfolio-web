@@ -1,30 +1,30 @@
 [
   {
     "number": "01",
-    "title": "hangman",
-    "description": "This project is demonstrating React + TypeScript skills, with focus on state-driven UI updates and user-friendly interactions.",
-    "githubURL": "https://github.com/maivlys/hangman",
-    "demoURL": "https://hangman-seven-iota.vercel.app/",
-    "imgSrc": "/projects/hangman.png"
+    "title": "shopping cart",
+    "description": "A fully responsive e-commerce shopping cart built with React and TypeScript, showcasing a complete shopping flow from product browsing to purchase simulation. It includes filtering, favourites, cart management with persistent state, and a multi-step checkout with Zod-based validation. Built with React Router, Context API for global state, and a custom JSON product database. UI/UX is based on a Figma design grounded in master thesis research and user interviews.",
+    "githubURL": "https://github.com/maivlys/shopping-cart",
+    "demoURL": "https://pearla-shopping-cart-project.vercel.app/",
+    "imgSrc": "/projects/pearla.png"
   },{
     "number": "02",
-    "title": "shopping cart",
-    "description": "This project is demonstrating React + TypeScript skills, with focus on state-driven UI updates and user-friendly interactions.",
-    "githubURL": "https://github.com/maivlys/hangman",
-    "demoURL": "https://hangman-seven-iota.vercel.app/",
-    "imgSrc": "/projects/hangman.png"
+    "title": "portfolio website",
+    "description": "A responsive personal portfolio website showcasing an about me section, project showcase, and contact information in a minimal, clean layout. Designed in Figma and built with semantic HTML, CSS, and Vanilla JavaScript. Includes a dark/light theme toggle for improved user experience.",
+    "githubURL": "https://github.com/maivlys/portfolio-web",
+    "demoURL": "https://portfolio-web-makarova.vercel.app/",
+    "imgSrc": "/projects/web.png"
   },{
     "number": "03",
-    "title": "hangman 22",
-    "description": "This project is demonstrating React + TypeScript skills, with focus on state-driven UI updates and user-friendly interactions.",
+    "title": "hangman",
+    "description": "Hangman game built with React and TypeScript, featuring a clean, straightforward design and interactive gameplay. It supports both keyboard and mouse input, with dynamic UI updates based on game state and instant restart functionality. Focused on state management, conditional rendering, type safety, and maintainable component-based styling.",
     "githubURL": "https://github.com/maivlys/hangman",
-    "demoURL": "https://hangman-seven-iota.vercel.app/",
+    "demoURL": "https://hangman--project.vercel.app/",
     "imgSrc": "/projects/hangman.png"
   },{
     "number": "04",
-    "title": "web portfolio",
-    "description": "This project is demonstrating React + TypeScript skills, with focus on state-driven UI updates and user-friendly interactions.",
-    "githubURL": "https://github.com/maivlys/hangman",
-    "demoURL": "https://hangman-seven-iota.vercel.app/",
-    "imgSrc": "/projects/hangman.png"
+    "title": "learning tool",
+    "description": "",
+    "githubURL": "",
+    "demoURL": "",
+    "imgSrc": "/projects/tool.png"
   }]
