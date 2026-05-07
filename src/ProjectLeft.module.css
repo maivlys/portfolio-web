@@ -27,6 +27,7 @@
   font-weight: 300;
   font-size: clamp(0.8rem, 1vw, 0.9rem);
   text-align: right;
+  opacity: 0.8;
 }
 .desc.empty{
   width: clamp(100px, 20vw,400px);
