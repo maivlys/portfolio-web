@@ -1,16 +1,34 @@
-# React + Vite
+# Personal Portfolio Website – JavaScript
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and fully responsive portfolio website built with Vanilla JavaScript, focused on clean UI implementation, responsive layouts, and showcasing frontend development projects through a minimal and user-friendly design.
 
-Currently, two official plugins are available:
+## Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+[preview](https://portfolio-web-makarova.vercel.app/)
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Project showcase with descriptions and external project links
+- Dark/light mode toggle for improved user experience
+- Fully responsive design across devices
+- Custom UI designed and implemented from a personal Figma prototype
+- Contact section with copy-to-clipboard email functionality
+- Clean and minimal navigation structure
 
-## Expanding the ESLint configuration
+## Skills Demonstrated
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Semantic HTML structure and accessible layout building
+- Responsive design using Flexbox, Grid, and CSS variables
+- Vanilla JavaScript for DOM manipulation and UI interactivity
+- Theme switching and dynamic UI state handling
+- Applying basic UX principles for intuitive navigation and readability
+- Component-like structuring and organization of landing page sections
+
+## Installation
+
+```bash
+git clone https://github.com/maivlys/portfolio-web.git
+cd portfolio-web
+npm install
+npm run dev
+```
